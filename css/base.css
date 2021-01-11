@@ -1,0 +1,141 @@
+/*
+Title:				Baseline Stylesheet
+Author:				Fusionary Media
+Updated:			7th July 2008
+*/
+
+/***************************************
+   =Typography
+************************************** */
+p           { margin: 0 0 1.5em; }
+
+blockquote  { margin: 1.5em; color: #666; }
+strong      { font-weight: bold; }
+em,dfn      { font-style: italic; }
+dfn         { font-weight: bold; }
+sup, sub    { line-height: 0; }
+sup					{ vertical-align: super; }
+sub					{ vertical-align: sub; }
+address     { margin: 0 0 1.5em }
+del         { text-decoration: line-through; }
+
+abbr, acronym			{ text-transform: lowercase; font-variant:small-caps; letter-spacing:0.1em; }
+code, tt,kbd			{ font: 1em "andale mono",'monotype.com','lucida console',monospace; }
+
+
+/***************************************
+   =Lists
+************************************** */
+li ul, 
+li ol       { margin: 0 1.5em; }
+ul, ol      { margin: 0 1.2em 1.5em; }
+
+ul          { list-style-type: disc; }
+ol          { list-style-type: decimal;}
+
+dl          { margin: 0 0 1.5em 0; }
+dt		      { font-weight: bold; }
+dd          { margin-left: 1.5em;}
+
+
+/***************************************
+   =Forms
+************************************** */
+form{
+	margin: 0 0 1.5em;
+}
+fieldset{
+	border: 1px solid #ccc;
+	margin: 1.5em 0;
+	padding: 1.5em;
+}
+
+/* inputs */
+form div.text input,
+textarea{
+	background: #fff;
+	border:1px solid #999;
+	padding: 2px;
+	width: 300px
+}
+form div.text label,
+form div.textarea label,
+form div.select label{
+	display: block;
+}
+form div.text,
+form div.textarea,
+form div.select{
+	margin: 0 0 .75em;
+}
+form div.text input:focus,
+textarea:focus{
+	border-color: #333;
+}
+
+/* radio and checkboxes */
+form .radio label,
+form .checkbox label{
+	display: inline; 
+} 
+form div.radio,
+form div.checkbox{
+	margin: 0;
+}
+form div.radio label,
+form div.checkbox label{
+	cursor: pointer;
+}
+
+
+/***************************************
+   =Tables
+************************************** */
+table{
+	width: 100%;
+	margin: 0 0 1.5em;
+}
+th{
+	font-weight: bold;
+}
+td.single,
+th.single{
+	text-align: center;
+}
+td,th{
+	border: 1px #ccc solid;
+	padding: 2px 4px;
+}
+
+
+/***************************************
+   =Floats
+************************************** */
+/* Clearing floats without extra markup
+   Based on How To Clear Floats Without Structural Markup by PiE
+   [http://www.positioniseverything.net/easyclearing.html] */
+.clear-after:after, .container:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+.clear-after, .container {display: inline-block;}
+* html .clear-after,
+* html .container {height: 1%;}
+.clear-after, .container {display: block;}
+
+.clear { clear: both; }
+.right { float: right; }
+.left	 { float: left; }
+
+
+/***************************************
+   =Misc
+************************************** */
+.hide				{ display: none; }
+.access			{ position: absolute; left: -1000em; top: -1000em; }
+.replace    { letter-spacing: -1em; text-indent: -1000em; display: block; font-size: 1px;}
+
+

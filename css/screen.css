@@ -1,0 +1,394 @@
+/* @override http://fuller.dev/css/screen.css */
+
+/*
+Title:				Screen Stylesheet
+Author:				Fusionary Media
+Updated:			7th July 2008
+*/
+
+@import url(reset.css);
+@import url(base.css);
+
+
+/***************************************
+   =Defaults
+************************************** */
+body {
+	font: normal 12px/1.5em "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #345;
+}
+
+a:focus,
+a:hover     { color: #000; text-decoration: underline; }
+a           { color: #106487; text-decoration: underline; }
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	line-height: 1.2em;
+}
+
+h1 {
+	font-size: 30px;
+}
+h2 {
+	font-size: 24px;
+}
+h3 {
+  margin-bottom: 1em;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 21px;
+  color: #106487;
+}
+h4 {
+	font: bold 11px Verdana, Helvetica, Arial, sans-serif;
+	color: #a0a0a0;
+	text-transform: uppercase;
+}
+h4 span {
+  text-transform: none;
+}
+h5 {
+	font: bold 11px Verdana, Helvetica, Arial, sans-serif;
+}
+h6 {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+/***************************************
+   =Structure
+************************************** */
+body {
+	background: #fff url(../img/bg-header-footer.gif) repeat-x 0 -215px;
+	-moz-opacity: .9999;
+}
+
+#header {
+  height: 126px;
+  position: relative;
+  background: transparent url(../img/bg_header.gif) no-repeat 11px 10px;
+}
+
+.container {
+  width: 772px;
+  margin: 0 auto;
+  background: transparent url(../img/bg_container.gif) no-repeat 0 0; 
+}
+
+
+#footer {
+  height: 185px;
+  padding-top: 30px;
+  background: #7ecfd8 url(../img/bg-header-footer.gif) repeat-x 0 0;	
+}
+
+/***************************************
+   =content
+************************************** */
+#content {
+	min-height: 400px;
+	width: 483px;
+	float: right;
+	margin: 0 21px 20px 0;
+}
+
+#sidebar {
+  margin-left: 42px;
+  width: 200px;
+}
+
+/***************************************
+   =nav
+************************************** */
+.nav-global {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.nav-global li {
+  float: left;
+}
+
+/* nav-main */
+
+#nav-main {
+  margin: 0 0 20px 21px;
+}
+#nav-main li {
+  margin-right: 10px;
+}
+#nav-main a {
+  display: block;
+  height: 110px;
+  width: 237px;
+  background: url(../img/bg_nav.gif) no-repeat 0 -110px;
+  text-indent: -1000em;
+  overflow: hidden;
+}
+
+#nav-main li.nav-about a.active,
+#nav-main li.nav-about a:hover { background-position: 0 0; }
+
+
+#nav-main li.nav-portfolio a { background-position: -247px -110px; }
+#nav-main li.nav-portfolio a.active,
+#nav-main li.nav-portfolio a:hover { background-position: -247px 0; }
+
+#nav-main li.nav-blog a { background-position: -494px -110px; }
+#nav-main li.nav-blog a.active,
+#nav-main li.nav-blog a:hover { background-position: -494px 0; }
+
+/* nav-sidebar */
+
+#sidebar .nav  {
+  padding-top: 48px;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  list-style-type: none;
+}
+#sidebar ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+#content-container .intro .nav { /* if the sidebar has intro text remove nav's top padding */
+  padding-top: 0;
+}
+#sidebar .nav ul {
+  list-style-type: none;
+  margin-bottom: 12px;
+}
+#sidebar .nav li {
+  margin-bottom: 6px;
+}
+#sidebar .nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#sidebar .nav a.active,
+#sidebar .nav a:hover,
+.port-cat li a:hover {
+  color: #44b1d1;
+}
+.port-cat ul{
+	margin: 0 0 1.5em;
+}
+.port-cat li a {
+	display: block;
+}
+#sidebar .nav a:hover,
+.port-cat li a {
+  text-decoration: underline;
+}
+#sidebar .nav a.active:hover {
+  text-decoration: none;
+}
+
+.port-cat li a:hover {
+  text-decoration: none;
+}
+#sidebar .nav li h5 {
+  margin: 0 0 8px 0;
+  font-size: 1em;
+  color: #106487;
+  text-transform: uppercase;
+}
+#sidebar li li,
+.port-cat li {
+  padding-left: 14px;
+  background: url(../img/bullet-sidenav.gif) no-repeat 0 6px;
+  margin-bottom: 2px;
+}
+.port-cat li a{
+	text-decoration: none;
+}
+#sidebar .nav ul a {
+  text-transform: none;
+}
+
+/* nav-supp */
+
+#nav-supp {
+  float: right;
+  margin: 0 5px 4px 0;
+  font-size: 12px;
+}
+#nav-supp li {
+  margin-left: 10px;
+}
+#nav-supp a {
+  padding: 0 6px;
+  color: #106487;
+  text-decoration: none;
+}
+#nav-supp a:hover {
+  color: #fff;
+  background-color: #106487;
+}
+/***************************************
+   =header
+************************************** */
+#brand-logo {
+  position: absolute;
+  top: 46px;
+  left: 21px;
+}
+#brand-logo, #brand-logo a {
+  background: url(../img/logo_fuller_design.gif) no-repeat 0 0;
+  width: 247px;
+  height: 72px;
+}
+#header h2 {
+  padding: 78px 32px 0 0;
+  text-align: right;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #525252;
+}
+
+/***************************************
+   =footer
+************************************** */
+#footer .container {
+  background: none;
+}
+
+#copyright {
+  color: #fff;
+  float: right;
+  clear: right;
+  padding-right: 11px;
+}
+
+/*** vcard ***/
+
+.vcard {
+  color: #666;
+  float: left;
+  padding-left: 11px;
+}
+.vcard a {
+  text-decoration: none;
+  color: #666;
+}
+
+.fn {
+  display: none;
+}
+
+.org {
+  color: #106487;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+#hcard-fullerdesign .fn{
+	display: block;
+	font-weight: normal;
+	line-height: 1.5em;
+	color: #666;
+}
+
+/***************************************
+   =home page gallery
+************************************** */
+#gallery {
+  position: relative;
+  overflow: hidden;
+  width: 472px;
+  height: 400px;
+}
+#gallery div {
+  position: absolute;
+}
+/***************************************
+   =portfolio
+************************************** */
+
+/* index page */
+
+.port-cat {
+  float: left;
+  width: 150px;
+  margin-right: 10px;
+}
+.port-cat h3 {
+  font-style: normal;
+  font-size: 18px;
+  font-family: inherit;
+}
+.port-cat ul,
+.port-cat li {
+  margin-left: 0;
+  list-style: none;
+}
+.port-cat h3,
+.port-cat ul {
+  padding: 0 3px;
+}
+
+/* detail pages */
+
+#portimages {
+  position: relative;
+  background-color: #000;
+  margin-bottom: 6px;
+  width: 400px;
+  height: 300px;
+}
+
+.portimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.caption {
+  background-color: #000;
+  color: #fff;
+  height: 30px;
+  line-height: 24px;
+  padding: 0 10px;
+  position: absolute;
+  width: 380px;
+  left: 0;
+  bottom: 0;
+}
+#pi-nav {
+  list-style-type: none;
+  overflow: hidden;
+  float: right;
+  margin: 0 75px 0 0;
+  padding: 0;
+}
+#pi-nav li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+#pi-nav a {
+  display: block;
+  height: 18px;
+  width: 18px;
+  margin-right: 8px;
+  border: 1px solid #d3d7e0;
+  text-align: center;
+  color: #555;
+  text-decoration: none;
+}
+#pi-nav a.activeSlide {
+  background-color: #d3d7e0;
+} 
+
+#client {
+  clear: right;
+}
+/***************************************
+   =blog (inspiration)
+************************************** */
+ul.entry-list {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
